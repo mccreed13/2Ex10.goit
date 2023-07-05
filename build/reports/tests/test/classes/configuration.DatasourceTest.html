@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - DatasourceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>DatasourceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/configuration.html">configuration</a> &gt; DatasourceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.191s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">openSession()</td>
+<td class="success">1.191s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-07-04 14:00:36 database: opening D:/JavaGoIt/JavaDev/Ex10/mydb (build 214)
+2023-07-04 14:00:36 lock: 1 exclusive requesting for SYS 
+2023-07-04 14:00:36 lock: 1 exclusive added for SYS 
+2023-07-04 14:00:36 lock: 1 exclusive unlock SYS 
+2023-07-04 14:00:36 lock: 1 exclusive requesting for SYS 
+2023-07-04 14:00:36 lock: 1 exclusive added for SYS 
+2023-07-04 14:00:36 lock: 1 exclusive unlock SYS 
+2023-07-04 14:00:36 database: opened D:/JavaGoIt/JavaDev/Ex10/mydb
+2023-07-04 14:00:36 lock: 1 exclusive requesting for SYS 
+2023-07-04 14:00:36 lock: 1 exclusive added for SYS 
+2023-07-04 14:00:36 lock: 1 exclusive unlock SYS 
+2023-07-04 14:00:36 database: connecting session #3 to D:/JavaGoIt/JavaDev/Ex10/mydb
+2023-07-04 14:00:36 jdbc[3]: 
+/*SQL */SET AUTOCOMMIT true;
+2023-07-04 14:00:36 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2023-07-04 14:00:36 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection(&quot;jdbc:h2:./mydb;TRACE_LEVEL_SYSTEM_OUT=3&quot;, &quot;\&quot;ADMIN\&quot;&quot;, &quot;&quot;);
+2023-07-04 14:00:36 jdbc[3]: 
+/**/conn0.getAutoCommit();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/conn0.setAutoCommit(true);
+2023-07-04 14:00:36 jdbc[3]: 
+/**/DatabaseMetaData dbMeta0 = conn0.getMetaData();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/DatabaseMetaData dbMeta1 = conn0.getMetaData();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta1.getDatabaseMajorVersion();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta1.getDatabaseMinorVersion();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta1.getDatabaseProductVersion();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta1.getSQLKeywords();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.supportsCatalogsInTableDefinitions();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.supportsSchemasInTableDefinitions();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.storesLowerCaseIdentifiers();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.storesUpperCaseIdentifiers();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.storesMixedCaseIdentifiers();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.storesUpperCaseIdentifiers();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.storesLowerCaseQuotedIdentifiers();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.storesUpperCaseQuotedIdentifiers();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.storesMixedCaseQuotedIdentifiers();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.getConnection();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/conn0.getCatalog();
+2023-07-04 14:00:36 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.supportsNamedParameters();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.supportsResultSetType(1004);
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.supportsGetGeneratedKeys();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.supportsBatchUpdates();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.dataDefinitionIgnoredInTransactions();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.dataDefinitionCausesTransactionCommit();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.getSQLStateType();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.getConnection();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/conn0.getSchema();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/conn0.getSchema();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.supportsNamedParameters();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.getCatalogSeparator();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.isCatalogAtStart();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta0.getConnection();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/DatabaseMetaData dbMeta2 = conn0.getMetaData();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/dbMeta2.getJDBCMajorVersion();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/Clob clob0 = conn0.createClob();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/clob0.free();
+2023-07-04 14:00:36 jdbc[3]: 
+/**/conn0.setAutoCommit(true);
+2023-07-04 14:00:36 jdbc[3]: 
+/**/conn0.clearWarnings();
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>июл. 04, 2023 2:00:35 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.1.0.Final
+июл. 04, 2023 2:00:35 PM org.hibernate.cfg.Environment &lt;clinit&gt;
+INFO: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.h2.Driver, hibernate.connection.user=&quot;admin&quot;, hibernate.dialect=org.hibernate.dialect.H2Dialect, hibernate.connection.password=****, hibernate.connection.url=jdbc:h2:./mydb;TRACE_LEVEL_SYSTEM_OUT=3, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.pool_size=10, hibernate.connection.autocommit=true}
+SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+июл. 04, 2023 2:00:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+июл. 04, 2023 2:00:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: Loaded JDBC driver class: org.h2.Driver
+июл. 04, 2023 2:00:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001012: Connecting with JDBC URL [jdbc:h2:./mydb;TRACE_LEVEL_SYSTEM_OUT=3]
+июл. 04, 2023 2:00:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, autocommit=true, user=&quot;admin&quot;}
+июл. 04, 2023 2:00:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: true
+июл. 04, 2023 2:00:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections &lt;init&gt;
+INFO: HHH10001115: Connection pool size: 10 (min=1)
+июл. 04, 2023 2:00:36 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl logSelectedDialect
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+июл. 04, 2023 2:00:37 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at 4 июл. 2023 г., 14:00:37</p>
+</div>
+</div>
+</body>
+</html>
